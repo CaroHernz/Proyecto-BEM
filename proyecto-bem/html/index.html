@@ -60,17 +60,19 @@
 
         <section class="gallery">
             <h2 class="gallery__title">Galería de Noticias</h2>
-            <div class="gallery__item">
-                <img src="../assets/images/news_1.jpeg" alt="" class="gallery__img">
-                <p class="gallery__text">🦄 Científicos descubren que los unicornios eran reales... pero se extinguieron por exceso de glitter ✨</p>
-            </div>
-            <div class="gallery__item">
-                <img src="../assets/images/news_2.jpeg" alt="" class="gallery__img">
-                <p class="gallery__text">🥪 Hombre logra teletransportar su sandwich... pero aparece en 1997 ⏳</p>
-            </div>
-            <div class="gallery__item">
-                <img src="../assets/images/news_3.jpeg" alt="" class="gallery__img">
-                <p class="gallery__text">🛹 Abuelo de 90 años gana campeonato de skate: 'El secreto es la sopa de lentejas'</p>
+            <div class="gallery__items">
+                <div class="gallery__item">
+                    <img src="../assets/images/news_1.jpeg" alt="" class="gallery__img">
+                    <p class="gallery__text">🦄 Científicos descubren que los unicornios eran reales... pero se extinguieron por exceso de glitter ✨</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="../assets/images/news_2.jpeg" alt="" class="gallery__img">
+                    <p class="gallery__text">🥪 Hombre logra teletransportar su sandwich... pero aparece en 1997 ⏳</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="../assets/images/news_3.jpeg" alt="" class="gallery__img">
+                    <p class="gallery__text">🛹 Abuelo de 90 años gana campeonato de skate: 'El secreto es la sopa de lentejas'</p>
+                </div>
             </div>
         </section>
 
@@ -89,8 +91,11 @@
                     <label for="news" class="form__label">Tu noticia: </label>
                     <textarea id="news" class="form__textarea" placeholder="Escribe tu noticia"></textarea>
                 </div>
-                <button class="form__button form__button--reset">Borrar</button>
+                <div class="form__buttons">
+                    <button class="form__button form__button--reset">Borrar</button>
                 <button class="form__button form__button--submit">Enviar</button>
+                </div>
+                
             </form>
         </section>
     </main>
