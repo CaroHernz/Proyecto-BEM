@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #e8e8e8;
+  color: #292F36;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #FF9F1C;
+  padding: 0 1rem;
+}
+.header__logo img {
+  width: 40px;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+.header__menu {
+  background-color: #FF9F1C;
+  padding: 0 1rem;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav__item {
+  padding: 0 0.5rem;
+}
+.nav__item a {
+  color: #292F36;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav__item a:hover {
+  text-decoration: underline wavy #FFE66D;
+  color: #FFE66D;
+}
+.nav__item--activo {
+  background-color: #9b9b9b;
+  border-radius: 8px;
+}
+.nav__item--activo a {
+  color: #e8e8e8;
+}
+
+.main {
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+}
+.news__title {
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+.news__articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 10px 0;
+  align-content: center;
+  max-width: 800px;
+}
+@media screen and (max-width: 768px) {
+  .news__articles {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-left: 5px solid #9b9b9b;
+}
+.article__title {
+  color: #FF6B6B;
+  font-size: 1.2rem;
+}
+.article__text {
+  color: #292F36;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+.article__img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 0;
+}
+.article:hover {
+  transform: translateX(-3px) translateY(-3px);
+}
+@media screen and (max-width: 768px) {
+  .article {
+    width: 600px;
+  }
+  .article__img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.gallery {
+  background: rgba(155, 155, 155, 0.5058823529);
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid #e8e8e8;
+  border-right: 3px solid #9b9b9b;
+  border-bottom: 3px solid #9b9b9b;
+  border-left: 3px solid #e8e8e8;
+  text-align: center;
+}
+.gallery__title {
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+.gallery__item {
+  width: 100%;
+}
+.gallery__img {
+  width: 85%;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.contact {
+  background-color: #FFE66D;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-top: 3px solid #e8e8e8;
+  border-right: 3px solid #9b9b9b;
+  border-bottom: 3px solid #9b9b9b;
+  border-left: 3px solid #e8e8e8;
+  max-width: 800px;
+}
+.contact__title {
+  color: #FF6B6B;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.form {
+  text-align: center;
+}
+.form__item {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.form__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #292F36;
+  font-size: 0.9rem;
+}
+.form__input, .form__textarea {
+  width: 75%;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+.form__input:focus, .form__textarea:focus {
+  outline: none;
+  border-color: #FF9F1C;
+}
+.form__button {
+  background-color: #FF9F1C;
+  color: #292F36;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.5s;
+  font-weight: bold;
+  font-size: 16px;
+}
+.form__button:hover {
+  background-color: #FF6B6B;
+  color: #e8e8e8;
+}
+
+.footer {
+  background-color: #292F36;
+  color: #e8e8e8;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+.footer__text {
+  margin-bottom: 1rem;
+}
+
+.social__link {
+  color: #e8e8e8;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.social__link--twitter {
+  background-color: rgb(35, 35, 35);
+}
+.social__link--twitter:hover {
+  background-color: #FF6B6B;
+}
+.social__link--facebook {
+  background-color: rgb(35, 35, 35);
+}
+.social__link--facebook:hover {
+  background-color: #6baeff;
+}
+.social__link--instagram {
+  background-color: rgb(35, 35, 35);
+}
+.social__link--instagram:hover {
+  background-color: #936bff;
+}
+
+/*# sourceMappingURL=styles.css.map */

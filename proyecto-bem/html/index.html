@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/proyecto-bem/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../assets/images/news_icon.png" alt="Logo El Mundo de Noticias" class="header__logo img">
+        </div>
+        <div class="header__menu">
+            <ul class="nav">
+                <li class="nav__item nav__item--activo"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#Noticias">Noticias</a></li>
+                <li class="nav__item"><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        
+        <section class="news">
+            <h2 class="news__title">Noticias destacadas</h2>
+            <div class="news__articles">
+            <article class="article">
+                <img src="../assets/images/news_1.jpeg" alt="Imagen noticia 1" class="article__img">
+                <h2 class="article__title">🦄 Científicos descubren que los unicornios eran reales... pero se extinguieron por exceso de glitter ✨</h2>
+                <p class="article__text">Un equipo de arqueólogos reveló fósiles de unicornios en Siberia, confirmando su existencia. Sin embargo, según el estudio, su extinción se debió a una "epidemia de glitter" en la Edad Media, cuando los unicornios se revolcaban en montañas de purpurina tóxica. "Eran criaturas glamurosas, pero poco prácticas", admitió el científico líder</p>
+            </article>
+            <article class="article">
+                <img src="../assets/images/news_2.jpeg" alt="Imagen noticia 2" class="article__img">
+                <h2 class="article__title">🥪 Hombre logra teletransportar su sandwich... pero aparece en 1997 ⏳</h2>
+                <p class="article__text">Un físico aficionado creó un "teletransportador de comida" en su garaje. Tras enviar un sándwich de jamón, recibió una foto polaroid desde el pasado: el pan aparece en la mesa de un restaurante de los 90 con un mensaje: "Gracias por el almuerzo, viajero del tiempo"</p>
+            </article>
+            <article class="article">
+                <img src="../assets/images/news_3.jpeg" alt="Imagen noticia 3" class="article__img">
+                <h2 class="article__title">🛹 Abuelo de 90 años gana campeonato de skate: 'El secreto es la sopa de lentejas'</h2>
+                <p class="article__text">Ramón, un nonagenario español, arrasó en el X-Games con un kickflip sobre un banco del parque. "La clave está en mi dieta: sopa de lentejas tres veces al día y siestas estratégicas", declaró. Sus rivales adolescentes quedaron "en shock" y ahora exigen recetas.</p>
+            </article>
+            <article class="article">
+                <img src="../assets/images/news_4.jpeg" alt="Imagen noticia 4" class="article__img">
+                <h2 class="article__title">📱 WhatsApp introduce modo 'auto-respuesta incómoda': ahora tu teléfono dirá 'jajaja' cuando no sepas qué contestar 🤖</h2>
+                <p class="article__text">La nueva actualización incluye un botón de emergencia para reír nerviosamente en chats. Usuarios reportan que el sistema también añade "sí, claro" automático a mensajes de jefes o ex-parejas.</p>
+            </article>
+            <article class="article">
+                <img src="../assets/images/news_5.jpeg" alt="Imagen noticia 5" class="article__img">
+                <h2 class="article__title">🌮 Extraterrestres exigen tacos como moneda interestelar: 'El guacamole es universal'</h2>
+                <p class="article__text">Tras aterrizar en México, seres de Alpha Centauri declararon que la Tierra solo será admitida en la "Federación Galáctica" si comparte su receta de salsa verde. NASA ya prepara un cohete-taquero.</p>
+            </article>
+            <article class="article">
+                <img src="../assets/images/news_6.jpeg" alt="Imagen noticia 6" class="article__img">
+                <h2 class="article__title">🏴‍☠️ Piratas del Caribe del siglo XXI roban yates... pero solo si no tienen gatos a bordo 🐈</h2>
+                <p class="article__text">Una banda de ladrones románticos dejó una nota en un barco robado: "Respetamos a los michis. PD: Su gatito es adorable". La Interpol los describe como "amantes de los animales con mala orientación laboral"</p>
+            </article>
+        </div>
+        </section>
+
+        <section class="gallery">
+            <h2 class="gallery__title">Galería de Noticias</h2>
+            <div class="gallery__item">
+                <img src="../assets/images/news_1.jpeg" alt="" class="gallery__img">
+                <p class="gallery__text">🦄 Científicos descubren que los unicornios eran reales... pero se extinguieron por exceso de glitter ✨</p>
+            </div>
+            <div class="gallery__item">
+                <img src="../assets/images/news_2.jpeg" alt="" class="gallery__img">
+                <p class="gallery__text">🥪 Hombre logra teletransportar su sandwich... pero aparece en 1997 ⏳</p>
+            </div>
+            <div class="gallery__item">
+                <img src="../assets/images/news_3.jpeg" alt="" class="gallery__img">
+                <p class="gallery__text">🛹 Abuelo de 90 años gana campeonato de skate: 'El secreto es la sopa de lentejas'</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2 class="contact__title">Mándanos tu Noticia!</h2>
+            <form action="" class="form">
+                <div class="form__item">
+                    <label for="name" class="form__label">Nombre: </label>
+                    <input type="text" class="form__input" placeholder="Nombre y Apellido">
+                </div>
+                <div class="form__item">
+                    <label for="email" class="form__label">Correo electrónico: </label>
+                    <input type="email" class="form__input" placeholder="ejemplo@mundodesencajado.com">
+                </div>
+                <div class="form__item">
+                    <label for="news" class="form__label">Tu noticia: </label>
+                    <textarea id="news" class="form__textarea" placeholder="Escribe tu noticia"></textarea>
+                </div>
+                <button class="form__button form__button--reset">Borrar</button>
+                <button class="form__button form__button--submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">© 2025 El Mundo de Noticias - Noticias para no creer.</p>
+        <div class="footer__social">
+            <a href="" class="social__link social__link--twitter">X</a>
+            <a href="" class="social__link social__link--facebook">Facebook</a>
+            <a href="" class="social__link social__link--instagram">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
