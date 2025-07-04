@@ -1,3 +1,13 @@
+:root {
+  --color-primary: #FF6B6B;
+  --color-secondary: #9b9b9b;
+  --color-dark: #292F36;
+  --color-light: #e8e8e8;
+  --color-accent: #FFE66D;
+  --color-hightlight: #FF9F1C;
+  --font-title: monospace;
+  --font-text:sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +15,9 @@
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #e8e8e8;
-  color: #292F36;
+  font-family: var(--font-text) ;
+  background-color: var(--color-light);
+  color: var(--color-dark);
   line-height: 1.5;
 }
 
@@ -15,7 +25,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #FF9F1C;
+  background: var(--color-hightlight);
   padding: 0 1rem;
 }
 .header__logo img {
@@ -23,7 +33,7 @@ body {
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
 }
 .header__menu {
-  background-color: #FF9F1C;
+  background-color: var(--color-hightlight);
   padding: 0 1rem;
 }
 
@@ -36,20 +46,20 @@ body {
   padding: 0 0.5rem;
 }
 .nav__item a {
-  color: #292F36;
+  color: var(--color-dark);
   text-decoration: none;
   font-weight: bold;
 }
 .nav__item a:hover {
-  text-decoration: underline wavy #FFE66D;
-  color: #FFE66D;
+  text-decoration: underline wavy var(--color-accent);
+  color: var(--color-accent);
 }
 .nav__item--activo {
-  background-color: #9b9b9b;
+  background-color: var(--color-secondary);
   border-radius: 8px;
 }
 .nav__item--activo a {
-  color: #e8e8e8;
+  color: var(--color-light);
 }
 
 .main {
@@ -61,7 +71,19 @@ body {
   align-items: center;
   width: 100%;
 }
-
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__content {
+  max-width: 100%;
+  background-color: white;
+  height: auto;
+}
+.hero__image {
+  width: 100%;
+}
 .news {
   display: flex;
   flex-direction: column;
@@ -69,7 +91,7 @@ body {
   align-items: center;
 }
 .news__title {
-  font-family: monospace;
+  font-family: var(--font-title);
   font-size: 1.5rem;
   width: 100%;
   text-align: left;
@@ -96,13 +118,13 @@ body {
   border-left: 5px solid #9b9b9b;
 }
 .article__title {
-  color: #FF6B6B;
+  color: var(--color-primary);
   font-size: 1.2rem;
   text-align: center;
 }
 .article__text {
-  color: #292F36;
-  font-family: sans-serif;
+  color: var(--color-dark);
+  font-family: var(--font-text);
   font-size: 0.9rem;
   text-align: justify;
 }
@@ -138,9 +160,9 @@ body {
   margin: 0.5rem 0;
 }
 .gallery__title {
-  font-family: monospace;
+  font-family: var(--font-title);
   font-size: 1.5rem;
-  color: #292F36;
+  color: var(--color-dark);
   margin: 1.5rem 0;
 }
 .gallery__items {
@@ -177,7 +199,7 @@ body {
 .gallery__text {
   background-color: rgba(41, 47, 54, 0.5137254902);
   position: absolute;
-  color: #e8e8e8;
+  color: var(--color-light);
   font-size: 1rem;
   max-width: 250px;
   text-align: center;
@@ -193,7 +215,7 @@ body {
 }
 
 .contact {
-  background-color: #FFE66D;
+  background-color: var(--color-accent);
   padding: 1.5rem;
   margin: 2rem 0;
   border-top: 3px solid #e8e8e8;
@@ -207,10 +229,10 @@ body {
   align-items: center;
 }
 .contact__title {
-  color: #FF6B6B;
+  color: var(--color-primary);
   margin-bottom: 1.5rem;
   text-align: center;
-  font-family: monospace;
+  font-family: var(--font-title);
   font-size: 1.5rem;
   width: 100%;
 }
@@ -243,14 +265,15 @@ body {
   border: 2px solid #ddd;
   border-radius: 3px;
   font-size: 0.9rem;
+  font-family: var(--font-text);
 }
 .form__input:focus, .form__textarea:focus {
   outline: none;
-  border-color: #FF9F1C;
+  border-color: var(--color-hightlight);
 }
 .form__button {
-  background-color: #FF9F1C;
-  color: #292F36;
+  background-color: var(--color-hightlight);
+  color: var(--color-dark);
   padding: 0.8rem 1.5rem;
   border: none;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -262,14 +285,14 @@ body {
   margin: 0.5rem;
 }
 .form__button:hover {
-  background-color: #FF6B6B;
-  color: #e8e8e8;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   transform: translateX(0px) translateY(-2px);
 }
 
 .footer {
-  background-color: #292F36;
-  color: #e8e8e8;
+  background-color: var(--color-dark);
+  color: var(--color-light);
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
@@ -280,7 +303,7 @@ body {
 }
 
 .social__link {
-  color: #e8e8e8;
+  color: var(--color-light);
   text-decoration: none;
   margin: 0 0.5rem;
   padding: 0.3rem 0.6rem;
@@ -305,5 +328,3 @@ body {
 .social__link--instagram:hover {
   background-color: #936bff;
 }
-
-/*# sourceMappingURL=styles.css.map */
