@@ -1,4 +1,5 @@
 <h1 align=center>📝 Proyecto BEM: Página de Noticias Falsas</h1>
+<image src="proyecto-bem/assets/images/logo_emn.png" alt="El Mundo de Noticias">
 <p>Este repositorio contiene la implementación de una interfaz web sencilla utilizando la metodología BEM (Bloque, Elemento, Modificador) para la organización de estilos CSS, como parte de un proyecto académico.</p>
 
 ## 🎯 Objetivos
