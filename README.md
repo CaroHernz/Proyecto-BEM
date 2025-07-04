@@ -16,8 +16,8 @@ proyecto-bem/
 ├── assets/
 │   └── images/       # Todas las imágenes del proyecto
 ├── css/
-│   ├── styles.scss   # Estilos con metodología BEM
 │   └── styles.css    # Versión compilada
+├── html/
 ├── index.html        # Página principal
 └── README.md         # Este documento
 ```
@@ -68,7 +68,7 @@ proyecto-bem/
    - Estructura semántica
    - Clases BEM consistentes
    - Contenido organizado en secciones
-2. **CSS y SCSS:**
+2. **CSS:**
    - Definición de variables
    - Bloques y modificadores
    - Responsividad
